@@ -1,0 +1,58 @@
+@import "inuit-css";
+
+html {
+  height: 100%;
+  width: 100%;
+  background: rgb(51,51,51);
+}
+
+body{
+  height: 100%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  color: #fff;
+}
+ 
+.layout {
+  font-size: 0;
+  height: 50%;
+}
+
+.layout__item {
+  font-size: 1rem;
+  height: 100%;
+}
+
+.tall {
+  height: 100%;
+}
+
+.tallX {
+  height: 200px;
+}
+
+.grey {
+  background-color: #CCC;
+}
+
+.yellow{
+    background:#DAA520;
+}
+ 
+.red{
+    background:#CD0000;  
+}
+ 
+.blue{
+    background:#4682B4;
+}
+ 
+.green{
+    background-color: #2E8B57;
+}
+
+
+
+a {
+  color: #00B7FF;
+}
