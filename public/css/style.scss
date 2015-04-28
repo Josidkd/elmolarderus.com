@@ -21,13 +21,22 @@ body{
   font-size: 0;
 }
 
+
 .layout__item {
   font-size: 1rem;
   height: 100%;
+  text-align: center !important;
 }
 
 .tall {
+  display: table;
   height: 100%;
+  width: 100%;
+}
+.tall > * {
+  display: table-cell;
+  vertical-align: middle;
+
 }
 
 .normal {
