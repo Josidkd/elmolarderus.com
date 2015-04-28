@@ -12,10 +12,13 @@ body{
   padding: 10px;
   color: #fff;
 }
- 
+@media screen and (min-width: 45em) {
+  .half-height {
+    height: 50%;
+  }
+} 
 .layout {
   font-size: 0;
-  height: 50%;
 }
 
 .layout__item {
