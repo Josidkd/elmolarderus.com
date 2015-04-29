@@ -621,6 +621,51 @@ html {
   .flag__body > :last-child {
     margin-bottom: 0; }
 
+@media screen and (max-width: 44.9375em) {
+  .palm-text--left {
+    text-align: left !important; }
+
+  .palm-text--center {
+    text-align: center !important; }
+
+  .palm-text--right {
+    text-align: right !important; } }
+@media screen and (min-width: 45em) and (max-width: 63.9375em) {
+  .lap-text--left {
+    text-align: left !important; }
+
+  .lap-text--center {
+    text-align: center !important; }
+
+  .lap-text--right {
+    text-align: right !important; } }
+@media screen and (min-width: 45em) {
+  .lap-and-up-text--left {
+    text-align: left !important; }
+
+  .lap-and-up-text--center {
+    text-align: center !important; }
+
+  .lap-and-up-text--right {
+    text-align: right !important; } }
+@media screen and (max-width: 63.9375em) {
+  .portable-text--left {
+    text-align: left !important; }
+
+  .portable-text--center {
+    text-align: center !important; }
+
+  .portable-text--right {
+    text-align: right !important; } }
+@media screen and (min-width: 64em) {
+  .desk-text--left {
+    text-align: left !important; }
+
+  .desk-text--center {
+    text-align: center !important; }
+
+  .desk-text--right {
+    text-align: right !important; } }
 /*------------------------------------*\
     #WIDTHS
 \*------------------------------------*/
@@ -2082,16 +2127,23 @@ body {
   padding: 10px;
   color: #fff; }
 
+.no-list-style {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 @media screen and (min-width: 45em) {
-  .half-height {
+  .half-height-lap-and-up {
     height: 50%; } }
 .layout {
   font-size: 0; }
 
+.text--center {
+  text-align: center !important; }
+
 .layout__item {
   font-size: 1rem;
-  height: 100%;
-  text-align: center !important; }
+  height: 100%; }
 
 .tall {
   display: table;
@@ -2125,3 +2177,31 @@ body {
 
 a {
   color: #00B7FF; }
+
+.selected {
+  background-color: #483D8B; }
+
+section {
+  background-color: #FEFEFE;
+  min-height: 100%;
+  color: #1E1E1E;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  text-align: center; }
+
+.button--close {
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1E1E1E;
+  color: #FEFEFE; }
+
+.product--image img {
+  max-height: 600px; }
+
+.tasting-notes {
+  vertical-align: bottom; }
