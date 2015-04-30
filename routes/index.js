@@ -2,9 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-
 function render(template, req, res) {
-  if ( req.headers['x-requested-with'] == 'XMLHttpRequest') {
+  if ( req.headers['x-pjax']) {
     res.render(template, {layout: null});
   }
   else {
@@ -14,10 +13,11 @@ function render(template, req, res) {
 }
 
 router.get('/', function(req, res) {
+  console.log(req.headers);
   render('index', req, res); 
 });
 
-router.get('/products/', function(req, res) {
+router.get('/products', function(req, res) {
    render('products', req, res); 
 });
 
