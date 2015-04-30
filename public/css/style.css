@@ -2127,6 +2127,10 @@ body {
   padding: 10px;
   color: #fff; }
 
+.content {
+  width: 100%;
+  min-height: 100%; }
+
 nav {
   height: 100%;
   width: 100%; }
