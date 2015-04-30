@@ -7,11 +7,11 @@ $(function(){
         $(this).removeClass("selected");
     });
 
-    $("#products-link").click(function() {
-      $("#products").show();
-    });
+    //$("#products-link").click(function() {
+      //$("#products").show();
+    //});
     
-    $(".button--close").click(function() {
-      $(this).closest("section").hide();
-    });
+    //$(".button--close").click(function() {
+      //$(this).closest("section").hide();
+    //});
 });
