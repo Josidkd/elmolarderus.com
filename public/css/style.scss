@@ -21,6 +21,7 @@ body{
 nav {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .no-list-style {
@@ -28,11 +29,6 @@ nav {
   padding: 0;
   margin: 0;
 }
-@media screen and (min-width: 45em) {
-  .half-height-lap-and-up {
-    height: 50%;
-  }
-} 
 .layout {
   font-size: 0;
 }
@@ -47,23 +43,23 @@ nav {
 
 }
 
-.tall {
+.tall, .normal {
   display: table;
   height: 100%;
   width: 100%;
 }
-.tall > * {
+.tall > *, .normal > * {
   display: table-cell;
   vertical-align: middle;
 
 }
 
 .normal {
-  height: 50%;
+  //height: 50%;
 }
 
-.tallX {
-  height: 200px;
+.half-tall {
+  height: 50%;
 }
 
 .grey {
@@ -119,4 +115,64 @@ section {
 .tasting-notes {
   vertical-align: bottom;
 }
+@media screen and (min-width: 45em) {
+  body {
+    padding: 10px 10px 10px 0;
+  }
 
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+  }
+
+  #tagline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+  }
+
+  #products-link {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 50%;
+  }
+
+  #contact-link {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    height: 50%;
+  }
+
+  #winery-link {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+  }
+
+  #ecological-link {
+    position: absolute;
+    top: 50%;
+    left: 33.33%;
+    height: 25%;
+  }
+
+  #turism-link {
+    position: absolute;
+    top: 75%;
+    left: 33.33%;
+    height: 25%;
+  }
+
+  #about-link {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    height: 50%;
+  }
+}
