@@ -43,23 +43,15 @@ nav {
 
 }
 
-.tall, .normal {
+.vertical--middle {
   display: table;
   height: 100%;
   width: 100%;
 }
-.tall > *, .normal > * {
+.vertical--middle > *{
   display: table-cell;
   vertical-align: middle;
 
-}
-
-.normal {
-  //height: 50%;
-}
-
-.half-tall {
-  height: 50%;
 }
 
 .grey {
