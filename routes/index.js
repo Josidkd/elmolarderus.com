@@ -13,7 +13,6 @@ function render(template, req, res) {
 }
 
 router.get('/', function(req, res) {
-  console.log(req.headers);
   render('index', req, res); 
 });
 

@@ -16,12 +16,12 @@ body{
 .container {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 nav {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .no-list-style {
@@ -167,4 +167,8 @@ section {
     left: 75%;
     height: 50%;
   }
+}
+
+h2 {
+  color: #515151;
 }
