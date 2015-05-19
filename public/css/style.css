@@ -2122,10 +2122,14 @@ html {
   background-color: #FEFEFE; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lato", Helvetica, Arial, sans-serif;
   padding: 10px;
   color: #fff;
   height: 100%; }
+
+h1 {
+  font-weight: 400 !important;
+  font-size: 2em; }
 
 .container {
   width: 100%;
@@ -2135,6 +2139,9 @@ body {
 nav {
   height: 100%;
   width: 100%; }
+
+a {
+  text-decoration: none; }
 
 .no-list-style {
   list-style: none;
@@ -2185,7 +2192,11 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FEFEFE; }
 
 .red {
   background: #CD0000; }
@@ -2232,6 +2243,8 @@ section {
     top: 0;
     left: 0;
     height: 50%; }
+    #logo h1 {
+      font-size: 3em; }
 
   #tagline {
     position: absolute;
@@ -2277,6 +2290,11 @@ section {
 h2 {
   color: #515151; }
 
-.logo {
+#logo {
+  font-family: 'Cinzel Decorative', serif;
+  color: #262223;
+  font-weight: normal; }
+
+.logo-img {
   width: 100%;
   color: #515151; }
