@@ -1,15 +1,48 @@
 @import "inuit-css";
 
+/* COLOR SCHEME */
+$white: #FEFEFE;
+$gray: #DDDAD6;
+$black: #1E1E1E;
+$yellow: #F9F1B5;
+$blue: #A6D8DE;
+$brown: #AE9C96;
+
+/* COLOR SCHEME BAR */
+#scheme-bar {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  div {
+    height:7px;
+  }
+}
+.blue {
+  background-color: $blue;
+}
+.brown {
+  background-color: $brown;
+}
+.yellow {
+  background-color: $yellow;
+}
+.gray {
+  background-color: $gray;
+}
+
 html {
   height: 100%;
   width: 100%;
-  background-color: #FEFEFE;
+  background-color: $white;
   //background: rgb(51,51,51);
 }
 
 body{
   font: 14px "Lato", Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: $white;
   height: 100%;
 }
 
@@ -106,7 +139,7 @@ nav li {
   font-size: 2em;
   font-weight: 300;
   text-transform: uppercase;
-  color: #FEFEFE;
+  color: $white;
 }
 
 
@@ -131,10 +164,7 @@ a {
 }
 
 section {
-  background-color: #FEFEFE;
   min-height: 100%;
-  color: #1E1E1E;
-  //display: none;
   width: 100%;
   text-align: center;
 }
@@ -144,7 +174,7 @@ section {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #1E1E1E;
+  background-color: $black;
   color: #FEFEFE;
 }
 
@@ -173,6 +203,10 @@ section {
     h1 {
       font-size: 3em;
     }
+  }
+
+  .line {
+    margin-left: 0;
   }
 
   #tagline {
@@ -227,9 +261,16 @@ section {
 
 h2.tagline, h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
-  color: #6D6D6D;
+  color: $brown;
   font-weight: 400;
   font-style: italic;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  line-height: 0;
+  border: 0 none;
 }
 
 #logo {
@@ -279,9 +320,11 @@ h2.tagline, h3, .tasting-notes p {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: white;
+  color: $white;
 }
+
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -291,6 +334,6 @@ h2.tagline, h3, .tasting-notes p {
 /* SECTIONS */
 
 #products {
-  background-color: #1E1E1E;
-  color: #FEFEFE;
+  background-color: $black;
+  color: $white;
 }

@@ -2116,6 +2116,30 @@ html {
   display: table;
   clear: both; }
 
+/* COLOR SCHEME */
+/* COLOR SCHEME BAR */
+#scheme-bar {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0; }
+  #scheme-bar div {
+    height: 7px; }
+
+.blue {
+  background-color: #A6D8DE; }
+
+.brown {
+  background-color: #AE9C96; }
+
+.yellow {
+  background-color: #F9F1B5; }
+
+.gray {
+  background-color: #DDDAD6; }
+
 html {
   height: 100%;
   width: 100%;
@@ -2123,7 +2147,7 @@ html {
 
 body {
   font: 14px "Lato", Helvetica, Arial, sans-serif;
-  color: #fff;
+  color: #FEFEFE;
   height: 100%; }
 
 h1 {
@@ -2220,9 +2244,7 @@ a {
   background-color: #483D8B; }
 
 section {
-  background-color: #FEFEFE;
   min-height: 100%;
-  color: #1E1E1E;
   width: 100%;
   text-align: center; }
 
@@ -2255,6 +2277,9 @@ section {
     height: 50%; }
     #logo h1 {
       font-size: 3em; }
+
+  .line {
+    margin-left: 0; }
 
   #tagline {
     position: absolute;
@@ -2299,9 +2324,15 @@ section {
     height: 50%; } }
 h2.tagline, h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
-  color: #6D6D6D;
+  color: #AE9C96;
   font-weight: 400;
   font-style: italic; }
+
+.line {
+  width: 80%;
+  height: 1px;
+  line-height: 0;
+  border: 0 none; }
 
 #logo {
   font-family: 'Cinzel Decorative', serif;
@@ -2349,7 +2380,7 @@ h2.tagline, h3, .tasting-notes p {
   transition-timing-function: ease-out; }
 
 .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
-  color: white; }
+  color: #FEFEFE; }
 
 .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
