@@ -107,8 +107,8 @@ nav li {
 .grey {
   background-color: #CCC;
 }
-.products-link__bg {
-  background: url('/img/products.jpg') no-repeat center center;
+.wines-link__bg {
+  background: url('/img/wines.jpg') no-repeat center center;
 }
 
 .ecological-link__bg {
@@ -178,11 +178,11 @@ section {
   color: #FEFEFE;
 }
 
-.product--image img {
-  max-height: 600px;
+.wine--image img {
+  max-height: 30em;
 }
 
-.product--title h2 {
+.wine--title h2 {
   font-size: 2em;
   font-weight: 300;
 }
@@ -190,7 +190,12 @@ section {
 .tasting-notes {
   vertical-align: bottom;
 }
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 45em) {
+  html {
+    font-size: 110%;
+  }
   .menu__container {
     padding: 10px 10px 10px 0;
   }
@@ -205,8 +210,16 @@ section {
     }
   }
 
-  .line {
+  .wine--image img {
+    max-height: 40em;
+  }
+
+  .line--left {
     margin-left: 0;
+  }
+
+  .line--right {
+    margin-right: 0;
   }
 
   #tagline {
@@ -216,7 +229,7 @@ section {
     height: 50%;
   }
 
-  #products-link {
+  #wines-link {
     position: absolute;
     top: 0;
     left: 25%;
@@ -259,11 +272,31 @@ section {
   }
 }
 
+@media screen and (min-width: 92em) {
+  html {
+    //font-size: 115%;
+  }
+} 
+
+@media screen and (min-width: 138em) {
+  html {
+    font-size: 130%;
+  }
+  body {
+    font-weight: 300;
+  }
+} 
+/*********************************/
+
 h2.tagline, h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
   color: $brown;
   font-weight: 400;
   font-style: italic;
+}
+
+h3 {
+  color: $yellow;
 }
 
 .line {
@@ -333,7 +366,11 @@ h2.tagline, h3, .tasting-notes p {
 
 /* SECTIONS */
 
-#products {
+#wines {
   background-color: $black;
   color: $white;
+}
+.wines__intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }

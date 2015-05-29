@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
   render('index', req, res); 
 });
 
-router.get('/products', function(req, res) {
+router.get('/wines', function(req, res) {
    render('products', req, res); 
 });
 
