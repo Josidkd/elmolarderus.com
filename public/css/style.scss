@@ -120,7 +120,7 @@ nav li {
 }
 
 .winery-link__bg {
-  background: url('/img/winery.jpg') no-repeat center center;
+  background: url('/img/wineyards.jpg') no-repeat center center;
 }
 
 .about-link__bg {
@@ -128,7 +128,7 @@ nav li {
 }
 
 .contact-link__bg {
-  background: url('/img/contact.jpg') no-repeat center center;
+  background: url('/img/entorno.jpg') no-repeat center center;
 }
 
 .menu__item {
@@ -189,6 +189,10 @@ section {
 
 .tasting-notes {
   vertical-align: bottom;
+}
+
+#tagline {
+  //background: url('/img/contact.jpg') no-repeat center center;
 }
 
 /* MEDIA QUERIES */
