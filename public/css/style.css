@@ -2445,3 +2445,13 @@ h3 {
 
 #tourism {
   color: #FEFEFE; }
+
+.banner {
+  position: relative;
+  overflow: auto; }
+
+.banner li {
+  list-style: none; }
+
+.banner .slide__elem {
+  float: left; }

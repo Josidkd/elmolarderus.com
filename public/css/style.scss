@@ -417,3 +417,6 @@ h3 {
 #tourism {
   color: $white;
 }
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner .slide__elem { float: left; }

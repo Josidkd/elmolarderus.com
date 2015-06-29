@@ -1,6 +1,13 @@
 $(function(){
   // we could use this library
   $(document).pjax('a[data-pjax]', '#data-container');
+  var unslider = $('.banner').unslider({
+    fluid: true
+  });
+  $('.unslider-arrow').click(function() {
+    var fn = this.className.split(' ')[1];
+    unslider.data('unslider')[fn]();
+  });
 
   // or try to do something like this
   /*function renderTemplate(template) {
