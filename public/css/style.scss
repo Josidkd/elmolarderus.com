@@ -379,7 +379,6 @@ h3 {
 /* SECTIONS */
 
 #wines {
-  background-color: $black;
   color: $white;
 }
 .section__intro h1 {
@@ -387,18 +386,32 @@ h3 {
   font-weight: 400;
 }
 
-#tourism-bg {
+.bg--full-fixed {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(/img/bg-tourism.jpg) no-repeat center center;
   width: 100%;
+  z-index: 0;
+  
+}
+#bg-tourism {
+  background: url(/img/bg-tourism.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
+}
+
+#bg-wine {
+  background: url(/img/bg-wine.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+
 }
 
 #tourism {
