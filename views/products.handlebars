@@ -91,3 +91,12 @@
   <a href="#" class="unslider-arrow prev">Previous slide</a>
   <a href="#" class="unslider-arrow next">Next slide</a>
 </section>
+<script type="text/javascript" charset="utf-8">
+  var unslider = $('.banner').unslider({
+    fluid: true
+  });
+  $('.unslider-arrow').click(function() {
+    var fn = this.className.split(' ')[1];
+    unslider.data('unslider')[fn]();
+  });
+</script>
