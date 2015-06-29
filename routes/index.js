@@ -20,4 +20,9 @@ router.get('/wines', function(req, res) {
    render('products', req, res); 
 });
 
+router.get('/tourism', function(req, res) {
+   render('tourism', req, res); 
+});
+
+
 module.exports = router;

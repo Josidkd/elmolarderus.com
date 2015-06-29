@@ -2154,11 +2154,17 @@ h1 {
   font-weight: 400 !important;
   font-size: 2em; }
 
-#container {
+#data-container {
   width: 100%;
   height: 100%; }
 
-.menu__container {
+.img--responsive {
+  max-width: 100%; }
+
+.img--circle {
+  border-radius: 50%; }
+
+.container {
   padding: 10px;
   width: 100%;
   height: 100%;
@@ -2411,6 +2417,22 @@ h3 {
   background-color: #1E1E1E;
   color: #FEFEFE; }
 
-.wines__intro h1 {
+.section__intro h1 {
   font-family: 'Playfair Display', serif;
   font-weight: 400; }
+
+#tourism-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/img/bg-tourism.jpg) no-repeat center center;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+#tourism {
+  color: #FEFEFE; }

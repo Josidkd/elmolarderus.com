@@ -1,6 +1,6 @@
 $(function(){
   // we could use this library
-  $(document).pjax('a[data-pjax]', '#container');
+  $(document).pjax('a[data-pjax]', '#data-container');
 
   // or try to do something like this
   /*function renderTemplate(template) {
