@@ -2455,3 +2455,7 @@ h3 {
 
 .banner .slide__elem {
   float: left; }
+
+.banner ul {
+  margin: 0;
+  padding: 0; }
