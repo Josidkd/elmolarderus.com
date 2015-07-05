@@ -432,4 +432,19 @@ h3 {
   margin: 0;
   padding: 0;
 }
-
+.unslider-arrow {
+  color: rgba(255, 255, 255, 0.3);
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+#arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+#arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
