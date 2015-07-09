@@ -2272,79 +2272,6 @@ section {
 .tasting-notes {
   vertical-align: bottom; }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 45em) {
-  html {
-    font-size: 110%; }
-
-  .menu__container {
-    padding: 10px 10px 10px 0; }
-
-  #logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%; }
-    #logo h1 {
-      font-size: 3em; }
-
-  .wine--image img {
-    max-height: 40em; }
-
-  .line--left {
-    margin-left: 0; }
-
-  .line--right {
-    margin-right: 0; }
-
-  #tagline {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50%; }
-
-  #wines-link {
-    position: absolute;
-    top: 0;
-    left: 25%;
-    height: 50%; }
-
-  #contact-link {
-    position: absolute;
-    top: 0;
-    right: 25%;
-    height: 50%; }
-
-  #winery-link {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 50%; }
-
-  #ecological-link {
-    position: absolute;
-    top: 50%;
-    left: 33.33%;
-    height: 25%; }
-
-  #tourism-link {
-    position: absolute;
-    top: 75%;
-    left: 33.33%;
-    height: 25%; }
-
-  #about-link {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    height: 50%; } }
-@media screen and (min-width: 138em) {
-  html {
-    font-size: 130%; }
-
-  body {
-    font-weight: 300; } }
-/*********************************/
 h2.tagline, h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
   color: #AE9C96;
@@ -2429,22 +2356,12 @@ h3 {
   width: 100%;
   z-index: 0; }
 
-#bg-tourism {
-  background: url(/img/bg-tourism.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
-
 #bg-wine {
   background: url(/img/bg-wine.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover; }
-
-#tourism {
-  color: #FEFEFE; }
 
 .banner {
   position: relative;
@@ -2475,3 +2392,99 @@ h3 {
   position: absolute;
   top: 50%;
   right: 0; }
+
+/*** TOURISM ***/
+#tourism {
+  color: #FEFEFE; }
+
+#bg-tourism {
+  background: url(/img/bg-tourism.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+
+.heading--big {
+  text-transform: uppercase; }
+  .heading--big span {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #DDDAD6; }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 45em) {
+  html {
+    font-size: 110%; }
+
+  .menu__container {
+    padding: 10px 10px 10px 0; }
+
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%; }
+    #logo h1 {
+      font-size: 3em; }
+
+  .wine--image img {
+    max-height: 40em; }
+
+  .line--left {
+    margin-left: 0; }
+
+  .line--right {
+    margin-right: 0; }
+
+  #tagline {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%; }
+
+  #wines-link {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 50%; }
+
+  #contact-link {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    height: 50%; }
+
+  #winery-link {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%; }
+
+  #ecological-link {
+    position: absolute;
+    top: 50%;
+    left: 33.33%;
+    height: 25%; }
+
+  #tourism-link {
+    position: absolute;
+    top: 75%;
+    left: 33.33%;
+    height: 25%; }
+
+  #about-link {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    height: 50%; } }
+@media screen and (min-width: 92em) {
+  .heading--big span {
+    font-size: 3em; } }
+@media screen and (min-width: 138em) {
+  html {
+    font-size: 130%; }
+
+  body {
+    font-weight: 300; } }
+/*********************************/
