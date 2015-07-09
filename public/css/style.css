@@ -2117,6 +2117,7 @@ html {
   clear: both; }
 
 /* COLOR SCHEME */
+/* TYPOGRAPHY */
 /* COLOR SCHEME BAR */
 #scheme-bar {
   position: absolute;
@@ -2146,13 +2147,14 @@ html {
   background-color: #FEFEFE; }
 
 body {
-  font: 14px "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1em;
   color: #FEFEFE;
   height: 100%; }
 
 h1 {
   font-weight: 400 !important;
-  font-size: 2em; }
+  font-size: 4.23607em; }
 
 #data-container {
   width: 100%;
@@ -2266,7 +2268,7 @@ section {
   max-height: 30em; }
 
 .wine--title h2 {
-  font-size: 2em;
+  font-size: 2.61803em;
   font-weight: 300; }
 
 .tasting-notes {
@@ -2279,7 +2281,8 @@ h2.tagline, h3, .tasting-notes p {
   font-style: italic; }
 
 h3 {
-  color: #F9F1B5; }
+  color: #F9F1B5;
+  font-size: 1.61803em; }
 
 .line {
   width: 80%;
@@ -2405,9 +2408,10 @@ h3 {
   -o-background-size: cover; }
 
 .heading--big {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 2.61803em; }
   .heading--big span {
-    font-size: 2em;
+    font-size: 1.61803em;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #DDDAD6; }
@@ -2480,7 +2484,7 @@ h3 {
     height: 50%; } }
 @media screen and (min-width: 92em) {
   .heading--big span {
-    font-size: 3em; } }
+    font-size: 2.61803em; } }
 @media screen and (min-width: 138em) {
   html {
     font-size: 130%; }

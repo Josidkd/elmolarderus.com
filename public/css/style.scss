@@ -1,4 +1,5 @@
 @import "inuit-css";
+@import "../components/modular-scale/stylesheets/_modular-scale.scss";
 
 /* COLOR SCHEME */
 $white: #FEFEFE;
@@ -7,6 +8,11 @@ $black: #1E1E1E;
 $yellow: #F9F1B5;
 $blue: #A6D8DE;
 $brown: #AE9C96;
+
+
+/* TYPOGRAPHY */
+$ms-base: 1em;
+$ms-ratio: $golden;
 
 /* COLOR SCHEME BAR */
 #scheme-bar {
@@ -41,14 +47,15 @@ html {
 }
 
 body{
-  font: 14px "Lato", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: ms(0);
   color: $white;
   height: 100%;
 }
 
 h1 {
   font-weight: 400 !important;
-  font-size: 2em;
+  font-size: ms(3);
 }
 
 #data-container {
@@ -191,7 +198,7 @@ section {
 }
 
 .wine--title h2 {
-  font-size: 2em;
+  font-size: ms(2);
   font-weight: 300;
 }
 
@@ -212,6 +219,7 @@ h2.tagline, h3, .tasting-notes p {
 
 h3 {
   color: $yellow;
+  font-size: ms(1);
 }
 
 .line {
@@ -356,8 +364,9 @@ h3 {
 }
 .heading--big { 
   text-transform: uppercase;
+  font-size: ms(2);
   span {
-    font-size: 2em;
+    font-size: ms(1);
     text-transform: uppercase;
     letter-spacing: 2px;
     color: $gray;    
@@ -452,7 +461,7 @@ h3 {
     //font-size: 115%;
   }
   .heading--big span {
-    font-size: 3em; 
+    font-size: ms(2); 
   }
 
 } 
