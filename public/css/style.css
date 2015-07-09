@@ -2264,12 +2264,11 @@ section {
   text-align: center; }
 
 .button--close {
-  font-size: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #1E1E1E;
-  color: #FEFEFE; }
+  z-index: 9999;
+  font-size: 1.61803em;
+  position: fixed;
+  top: 5px;
+  right: 5px; }
 
 .wine--image img {
   max-height: 30em; }
