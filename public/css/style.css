@@ -2156,6 +2156,13 @@ h1 {
   font-weight: 400 !important;
   font-size: 4.23607em; }
 
+.subheading {
+  font-size: 2.61803em;
+  color: #F9F1B5;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-style: italic; }
+
 #data-container {
   width: 100%;
   height: 100%; }
@@ -2294,6 +2301,8 @@ h3 {
   font-family: 'Cinzel Decorative', serif;
   color: #262223;
   font-weight: normal; }
+  #logo h1 {
+    font-size: 2.61803em; }
 
 .logo-img {
   width: 100%;
@@ -2407,6 +2416,17 @@ h3 {
   background-size: cover;
   -o-background-size: cover; }
 
+.thumb__img {
+  z-index: 1; }
+  .thumb__img img {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
+
+.thumb__img {
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear; }
+
 .heading--big {
   text-transform: uppercase;
   font-size: 2.61803em; }
@@ -2481,7 +2501,17 @@ h3 {
     position: absolute;
     top: 50%;
     left: 75%;
-    height: 50%; } }
+    height: 50%; }
+
+  .thumb__img:hover, .thumb__img:focus {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    position: relative;
+    z-index: 5; }
+    .thumb__img:hover img, .thumb__img:focus img {
+      -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5); } }
 @media screen and (min-width: 92em) {
   .heading--big span {
     font-size: 2.61803em; } }

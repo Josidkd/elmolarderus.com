@@ -58,6 +58,15 @@ h1 {
   font-size: ms(3);
 }
 
+
+.subheading {
+  font-size: ms(2);
+  color: $yellow;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-style: italic;
+
+}
 #data-container {
   //padding: 10px;
   width: 100%;
@@ -233,6 +242,9 @@ h3 {
   font-family: 'Cinzel Decorative', serif;
   color: #262223;
   font-weight: normal;
+  h1 {
+    font-size: ms(2);
+  }
 }
 
 .logo-img {
@@ -362,6 +374,21 @@ h3 {
   -o-background-size: cover;
 
 }
+
+.thumb__img {
+  z-index: 1;
+  img {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+  }
+}
+
+.thumb__img {
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+}
+
 .heading--big { 
   text-transform: uppercase;
   font-size: ms(2);
@@ -453,6 +480,17 @@ h3 {
     top: 50%;
     left: 75%;
     height: 50%;
+  }
+  .thumb__img:hover, .thumb__img:focus {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  position: relative;
+  z-index: 5;
+    img {
+      -webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+      box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    }
   }
 }
 
