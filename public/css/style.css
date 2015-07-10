@@ -2280,7 +2280,16 @@ section {
 .tasting-notes {
   vertical-align: bottom; }
 
-h2.tagline, h3, .tasting-notes p {
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #AE9C96; }
+  .tagline span {
+    font-size: 1em;
+    text-transform: uppercase; }
+
+h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
   color: #AE9C96;
   font-weight: 400;
@@ -2465,6 +2474,9 @@ h3 {
     top: 0;
     right: 0;
     height: 50%; }
+
+  .tagline span {
+    font-size: 1.61803em; }
 
   #wines-link {
     position: absolute;

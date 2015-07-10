@@ -216,11 +216,20 @@ section {
   vertical-align: bottom;
 }
 
-#tagline {
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-style: italic;
+  color: $brown;
+
+  span {
+  font-size: ms(0);
+  text-transform: uppercase;
   //background: url('/img/contacto.jpg') no-repeat center center;
+  }
 }
 
-h2.tagline, h3, .tasting-notes p {
+h3, .tasting-notes p {
   font-family: 'Playfair Display', serif;
   color: $brown;
   font-weight: 400;
@@ -442,6 +451,9 @@ h3 {
     top: 0;
     right: 0;
     height: 50%;
+  }
+  .tagline span {
+    font-size: ms(1);
   }
 
   #wines-link {
