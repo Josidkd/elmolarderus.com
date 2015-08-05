@@ -2129,6 +2129,24 @@ html {
   #scheme-bar div {
     height: 7px; }
 
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+#icon--load {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/img/Preloader.gif") center no-repeat #fff; }
+
 .blue {
   background-color: #A6D8DE; }
 
@@ -2166,21 +2184,6 @@ h1 {
 #data-container {
   width: 100%;
   height: 100%; }
-  #data-container -js #loader {
-    display: none; }
-  #data-container .js #loader {
-    display: block;
-    position: absolute;
-    left: 100px;
-    top: 0; }
-  #data-container .se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url("img/Preloader.gif") center no-repeat #fff; }
 
 .img--responsive {
   max-width: 100%; }

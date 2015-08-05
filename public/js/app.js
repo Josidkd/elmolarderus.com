@@ -3,7 +3,7 @@ $(function(){
   $(document).pjax('a[data-pjax]', '#data-container');
   $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
+    $("#icon--load").fadeOut("slow");;
   });
 });
   // or try to do something like this
