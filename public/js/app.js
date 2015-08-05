@@ -1,6 +1,11 @@
 $(function(){
   // we could use this library
   $(document).pjax('a[data-pjax]', '#data-container');
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+});
   // or try to do something like this
   /*function renderTemplate(template) {
    $.ajax({
@@ -29,4 +34,3 @@ $(function(){
       renderTemplate(history.state.name);
     }
 });*/
-});
