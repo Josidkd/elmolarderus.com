@@ -4,6 +4,8 @@ $(function(){
   $(window).load(function() {
     // Animate loader off screen
     $("#icon--load").fadeOut("slow");;
+    $('nav').addClass('animated zoomIn');
+    $('#header').addClass('animated fadeIn');
   });
 });
   // or try to do something like this
